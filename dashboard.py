@@ -18,34 +18,85 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+/* MAIN BACKGROUND */
 .stApp {
-    background-color: #101827;
-    color: #F3F4F6;
+    background-color: #171316;
+    color: #F5EDF0;
 }
 
+/* SIDEBAR */
 [data-testid="stSidebar"] {
-    background-color: #172235;
+    background-color: #241D22;
 }
 
+[data-testid="stSidebar"] * {
+    color: #F5EDF0;
+}
+
+/* HEADINGS */
 h1, h2, h3 {
-    color: #F3F4F6;
+    color: #F5EDF0;
+    font-weight: 700;
 }
 
+/* METRIC CARDS */
 div[data-testid="stMetric"] {
-    background-color: #1D2B40;
-    border: 1px solid #34445C;
+    background-color: #241D22;
+    border: 1px solid #54212F;
     padding: 18px;
     border-radius: 12px;
 }
 
 div[data-testid="stMetricLabel"] {
-    color: #B8C5D6;
+    color: #C8B9BF;
 }
 
 div[data-testid="stMetricValue"] {
     color: #FFFFFF;
 }
 
+/* BUTTONS */
+.stButton > button {
+    background-color: #54212F;
+    color: #FFFFFF;
+    border: 1px solid #B52D46;
+    border-radius: 8px;
+}
+
+.stButton > button:hover {
+    background-color: #B52D46;
+    color: #FFFFFF;
+    border: 1px solid #B52D46;
+}
+
+/* SELECT BOXES */
+div[data-baseweb="select"] > div {
+    background-color: #241D22;
+    border-color: #54212F;
+}
+
+/* INPUTS */
+.stTextInput input,
+.stNumberInput input {
+    background-color: #241D22;
+    color: #FFFFFF;
+}
+
+/* DATA TABLES */
+div[data-testid="stDataFrame"] {
+    border: 1px solid #54212F;
+    border-radius: 10px;
+}
+
+/* DIVIDERS */
+hr {
+    border-color: #54212F;
+}
+
+/* LINKS */
+a {
+    color: #D94A64 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
