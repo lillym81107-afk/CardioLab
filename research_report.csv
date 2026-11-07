@@ -1,0 +1,4 @@
+Relationship,Correlation,R_squared,P_value,Result
+Positive,0.937,0.877,0.0,Statistically significant
+Negative,-0.926,0.858,0.0,Statistically significant
+No Relationship,0.077,0.006,0.4479,Not statistically significant
